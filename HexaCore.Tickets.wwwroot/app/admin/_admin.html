@@ -1,0 +1,99 @@
+﻿<div class="col-md-4" ng-hide="vm.token">
+    <h1>Autenticação</h1>
+    <br>
+    <form>
+        <div class="form-group">
+            <label for="emailInput">E-mail</label>
+            <input type="email" class="form-control" ng-model="email" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+            <label for="passwordInput">Senha</label>
+            <input type="password" class="form-control" ng-model="password" placeholder="Senha">
+        </div>
+    </form>
+    <button class="btn btn-lg btn-block btn-primary" ng-click="vm.login()">Autenticar</button>
+</div>
+
+<div ng-if="vm.token">
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalNovaEmpresa">
+        Empresas
+    </button>
+
+    <button class="btn btn-primary btn-lg pull-right" ng-click="vm.logout()">Sair</button>
+
+    <h3>Chamados em aberto</h3>
+    <br />
+    <div ng-show="carregandoTickets" class="col-md-2 col-md-offset-5">
+        <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+    </div>
+    <table id="ticketsTable" ng-controller="TicketCtrl" class="table table-hover table-bordered table-striped" ng-hide="carregandoTickets">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tipo</th>
+                <th>Titulo</th>
+                <th>Empresa</th>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>Data de Abertura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="ticket in tickets | orderBy:'TipoTicket'">
+                <th>{{ ticket.TicketId }}</th>
+                <td>{{ ticket.TipoTicket }}</td>
+                <td>{{ ticket.Titulo }}</td>
+                <td>{{ ticket.EmpresaSolicitante }}</td>
+                <td>{{ ticket.NomeContato }}</td>
+                <td>{{ ticket.Descricao }}</td>
+                <td>{{ ticket.DataAbertura }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalNovaEmpresa" tabindex="-1" role="dialog" aria-labelledby="modalNovaEmpresaLabel" ng-controller="EmpresaCtrl">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalNovaEmpresaLabel">Empresas</h4>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table table-hover table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="empresa in empresas | orderBy:'Nome'">
+                                <th>{{ empresa.EmpresaId }}</th>
+                                <td>{{ empresa.Nome }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <label class="control-label requiredField" for="NomeContato">
+                            Nome
+                            <span class="asteriskField">
+                                *
+                            </span>
+                        </label>
+                        <input class="form-control" id="NomeEmpresa" name="NomeEmpresa" placeholder="Nome da empresa" type="text" ng-model="empresa.Nome" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" ng-click="novaEmpresa()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

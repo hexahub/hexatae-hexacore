@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html ng-app="ticketApp">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Suporte HexaTae</title>
+    <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div ng-include="'components/shared/navbar/navbar.html'"></div>
+        </header>
+
+        <main>
+            <div class="container" ng-view></div>
+        </main>
+
+        <div ng-include="'components/shared/footer/footer.html'"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+
+
+    <script src="assets/js/scripts.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/routes.js"></script>
+
+    <script src="app/ticket/TicketCtrl.js"></script>
+    <script src="app/ticket/TicketFactory.js"></script>
+
+    <script src="app/admin/AdminCtrl.js"></script>
+    <script src="app/admin/AdminFactory.js"></script>
+
+    <script src="app/empresa/EmpresaCtrl.js"></script>
+    <script src="app/empresa/EmpresaFactory.js"></script>
+
+    <script src="app/login/LoginFactory.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tickets", "Tickets", "{6295E17F-F42F-40EC-8168-843414DE11F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaCore.Tickets.API", "HexaCore.Tickets.API\HexaCore.Tickets.API.csproj", "{26786A63-D83C-4A5E-A692-AFBA81D7E8D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaCore.Tickets.Models", "HexaCore.Tickets.Models\HexaCore.Tickets.Models.csproj", "{D0215891-81AD-4096-8E99-494F54D4EBBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaCore.Tickets.Data", "HexaCore.Tickets.Data\HexaCore.Tickets.Data.csproj", "{2DE2AEBE-77AE-443A-B6C9-04F85901C04B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaCore.Tickets.Services", "HexaCore.Tickets.Services\HexaCore.Tickets.Services.csproj", "{A6B22479-32DF-41F5-B891-436522F99A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaTae.Criptografia", "HexaTae.Criptografia\HexaTae.Criptografia.csproj", "{F997CCF9-C6EC-4D76-9B85-BC7A9678B621}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HexaCore.Tickets.wwwroot", "HexaCore.Tickets.wwwroot\", "{3D5BA0F8-EA9B-4A1A-9450-C406421BEDD0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63795"
+		Debug.AspNetCompiler.PhysicalPath = "HexaCore.Tickets.wwwroot\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63795\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63795"
+		Release.AspNetCompiler.PhysicalPath = "HexaCore.Tickets.wwwroot\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63795\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63795"
+		SlnRelativePath = "HexaCore.Tickets.wwwroot\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaCore.Tickets.Application", "HexaCore.Tickets.Application\HexaCore.Tickets.Application.csproj", "{E08F0841-E8C3-4085-9D1B-73F4CDAE0B8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26786A63-D83C-4A5E-A692-AFBA81D7E8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26786A63-D83C-4A5E-A692-AFBA81D7E8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26786A63-D83C-4A5E-A692-AFBA81D7E8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26786A63-D83C-4A5E-A692-AFBA81D7E8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0215891-81AD-4096-8E99-494F54D4EBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0215891-81AD-4096-8E99-494F54D4EBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0215891-81AD-4096-8E99-494F54D4EBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0215891-81AD-4096-8E99-494F54D4EBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE2AEBE-77AE-443A-B6C9-04F85901C04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE2AEBE-77AE-443A-B6C9-04F85901C04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE2AEBE-77AE-443A-B6C9-04F85901C04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE2AEBE-77AE-443A-B6C9-04F85901C04B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B22479-32DF-41F5-B891-436522F99A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B22479-32DF-41F5-B891-436522F99A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B22479-32DF-41F5-B891-436522F99A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B22479-32DF-41F5-B891-436522F99A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F997CCF9-C6EC-4D76-9B85-BC7A9678B621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F997CCF9-C6EC-4D76-9B85-BC7A9678B621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F997CCF9-C6EC-4D76-9B85-BC7A9678B621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F997CCF9-C6EC-4D76-9B85-BC7A9678B621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5BA0F8-EA9B-4A1A-9450-C406421BEDD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5BA0F8-EA9B-4A1A-9450-C406421BEDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5BA0F8-EA9B-4A1A-9450-C406421BEDD0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5BA0F8-EA9B-4A1A-9450-C406421BEDD0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E08F0841-E8C3-4085-9D1B-73F4CDAE0B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08F0841-E8C3-4085-9D1B-73F4CDAE0B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08F0841-E8C3-4085-9D1B-73F4CDAE0B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08F0841-E8C3-4085-9D1B-73F4CDAE0B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26786A63-D83C-4A5E-A692-AFBA81D7E8D3} = {6295E17F-F42F-40EC-8168-843414DE11F7}
+		{D0215891-81AD-4096-8E99-494F54D4EBBE} = {6295E17F-F42F-40EC-8168-843414DE11F7}
+		{2DE2AEBE-77AE-443A-B6C9-04F85901C04B} = {6295E17F-F42F-40EC-8168-843414DE11F7}
+		{A6B22479-32DF-41F5-B891-436522F99A68} = {6295E17F-F42F-40EC-8168-843414DE11F7}
+		{3D5BA0F8-EA9B-4A1A-9450-C406421BEDD0} = {6295E17F-F42F-40EC-8168-843414DE11F7}
+		{E08F0841-E8C3-4085-9D1B-73F4CDAE0B8A} = {6295E17F-F42F-40EC-8168-843414DE11F7}
+	EndGlobalSection
+EndGlobal
